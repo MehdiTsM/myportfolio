@@ -34,7 +34,7 @@ function About() {
       <div className="scroll-smooth min-h-screen dark:bg-gradient-to-r from-gray-800 to-black bg-gray-200">
         <Navbar />
 
-        <div className="">
+        <div className="overflow-x-hidden">
           <section
             id="about"
             className="animate-fadeInUp duration-300 rounded-lg m-4 pt-14"
