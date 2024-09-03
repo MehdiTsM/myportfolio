@@ -4,14 +4,13 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import BedtimeOffIcon from '@mui/icons-material/BedtimeOff';
-// Use HashRouter instead of BrowserRouter
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // use HashRouter as per your previous configuration
 import Contact from './Contact';
 import Projects from './Projects';
-
+import ScrollToTop from './ScrollToTop'; 
 function App() {
   const [theme, setTheme] = useState(() => {
-    // Retrieve the theme from localStorage or default to light
+     
     const savedTheme = localStorage.getItem('theme');
     return savedTheme ? JSON.parse(savedTheme) : 'light';
   });
@@ -32,6 +31,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop /> 
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
