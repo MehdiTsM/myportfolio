@@ -14,10 +14,10 @@ function Projects() {
             link: '#'
         },
         {
-            title: 'SkyTracker',
+            title: 'Sky Tracker',
             description: 'A real-time weather app that provides detailed forecasts and conditions for any location.',
             image: ProjectTwoImage,
-            link: '#'
+            link: 'https://mehditsm.github.io/skytracker/#/'
         },
         ];
 
